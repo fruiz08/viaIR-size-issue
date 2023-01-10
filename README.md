@@ -1,6 +1,17 @@
 # viaIR size issue
 
 When calling an internal function multiple times using viaIR=true, the contract size increase drastically compared to using viaIR=false
+
+With viaIR=true : 
+ ·····················|··············|·················
+ |  Test              ·      14.445  ·  
+ ·····················|··············|·················
+ 
+ With viaIR=false
+  ·····················|··············|·················
+ |  Test              ·       3.788  ·                │
+ ·····················|··············|·················
+ 
 ## Getting Started
 
 ### Prerequisites
