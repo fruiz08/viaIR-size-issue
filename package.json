@@ -1,0 +1,37 @@
+{
+  "name": "viair-size-issue",
+  "version": "0.1.0",
+  "description": "viaIR issue when contract is near size limit",
+  "dependencies": {
+    "hardhat": "2.12.2",
+    "solc": "0.8.16"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "17.2.0",
+    "@commitlint/config-conventional": "17.2.0",
+    "@nomicfoundation/hardhat-toolbox": "2.0.0",
+    "@openzeppelin/contracts": "4.8.0",
+    "@typechain/ethers-v5": "10.2.0",
+    "hardhat-contract-sizer": "2.6.1",
+    "ts-generator": "0.1.1",
+    "ts-node": "10.9.1",
+    "typescript": "4.8.4"
+  },
+  "types": "types/index.d.ts",
+  "files": [
+    "/contracts"
+  ],
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "hardhat",
+    "smart-contracts",
+    "solidity"
+  ],
+  "scripts": {
+    "clean": "hardhat clean",
+    "compile": "hardhat compile",
+    "compile-viair": "VIA_IR=true hardhat compile",
+    "size-contracts": "hardhat size-contracts"
+  }
+}
